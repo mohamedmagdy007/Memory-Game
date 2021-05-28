@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .main{
+            width: 484px;
+            margin: 30px auto;
+            background-color: #d6d0d0;
+            overflow: hidden;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: tahoma;
+        }
+        div{
+            border-radius: 5px;
+            /*width: 23%;*/
+            height: 95px;
+            /*background-color: #0ca01a;*/
+            background-image: url(images/Moon.gif);
+            float: left;
+            margin: 2%;
+            cursor: pointer;
+            transition: background-color .1s ease-in-out;    
+        }
+        img{
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 100px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <p>score</p>
+    <section class="main">
+        
+    </section>
+    
+    <script src="game.js"></script>
+</body>
+</html>
