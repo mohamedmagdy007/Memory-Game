@@ -68,6 +68,6 @@ function check() {
     score[0].textContent = "score " + cardsWon.length;
     if(cardsWon.length===arr.length/2){
         audioRight.play();
-        alert("Congratulations")
+        score[0].textContent ="Congratulations";
     }
 }
