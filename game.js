@@ -41,6 +41,7 @@ for (var i = 0; i < divAll.length; i++) {
             return;
         }
         this.firstChild.style.opacity = "1";
+        this.classList.add("disabled")
         if (arr2.length == 0) {
             arr2[0] = this;
         } else if (arr2.length == 1) {
@@ -55,12 +56,17 @@ for (var i = 0; i < divAll.length; i++) {
 function check() {
     if (arr2[0].firstChild.id == arr2[1].firstChild.id) {
         audioRight.play();
+        console.log(arr2[0].classList.add("disabled"))
         cardsWon.push(arr2);
-        console.log(cardsWon)
+        arr2.forEach((li)=>{
+         console.log(li.classList.add("disabled")) ;
+        })
     } else {
         audioWrong.play();
         arr2[0].firstChild.style.opacity = 0;
         arr2[1].firstChild.style.opacity = 0;
+        arr2[0].classList.remove("disabled")
+        arr2[1].classList.remove("disabled")
     }
 
     arr2 = [];
